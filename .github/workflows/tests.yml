@@ -21,7 +21,8 @@ jobs:
 
             -   name: Install optimizers
                 run: |
-                    sudo add-apt-repository universe multiverse
+                    sudo add-apt-repository universe
+                    sudo add-apt-repository multiverse
                     sudo apt-get update
                     sudo apt-get install jpegoptim, pngquant, gifsicle, optipng, libjpeg-progs, webp
                     sudo npm install -g svgo
